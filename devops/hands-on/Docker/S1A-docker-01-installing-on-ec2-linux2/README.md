@@ -1,4 +1,3 @@
-
 # Hands-on Docker-01 : Installing Docker on Amazon Linux 2 AWS EC2 Instance
 
 Purpose of the this hands-on training is to teach the students how to install Docker on on Amazon Linux 2 EC2 instance.
@@ -225,21 +224,3 @@ Outputs:
       - ${PublicAddress}
       - PublicAddress: !GetAtt DockerMachine.PublicDnsName
 ```
-docker run --help
-docker run -i -t ubuntu
-cat /etc/os-release (işletim sistemin gösteriyor)
-docker  ps -a
-touch myfile
-docker ps -a
-docker container ls -a
-docker run -d nginx (arkada çalışması için)
-docker run nginx
-docker container exec -it d013b7270b22 bash (çalışan container içinde çalışmak için) 
-docker container rm d013b7270b22 (çalışmayan dosyaları siler)
-docker container stop d013b7270b22 (çalışanı stop eder)
-docker container rm -f d013b7270b22 (çalışanı siler)
-docker run alpine
-docker container prune (çalışmayan tüm dosyaları siler)
-docker image prune (çalışmayan tüm dosyaları siler)
-docker image ls
-docker inspect d013b7270b22 (dosyayı ayrıntılı gösterir)
